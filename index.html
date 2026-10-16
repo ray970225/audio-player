@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f3ee">
-  <title>音檔播放器</title>
+  <title>第六宿營小隊 音檔播放器</title>
   <style>
     :root {
       color-scheme: light;
@@ -66,6 +66,7 @@
     .play-button svg { width: 19px; height: 19px; fill: currentColor; }
     .track-title { margin: 0; font-size: 16px; font-weight: 650; }
     .track-file { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+    .track-note { margin: 8px 0 0; color: #626a64; font-size: 13px; line-height: 1.6; }
     .track-number { color: #9b9e99; font-variant-numeric: tabular-nums; font-size: 13px; }
     .player {
       margin-top: 20px;
@@ -92,7 +93,7 @@
 <body>
   <main>
     <p class="eyebrow">AUDIO PLAYER</p>
-    <h1>音檔播放器</h1>
+    <h1>第六宿營小隊<br>音檔播放器</h1>
     <p class="intro">選擇下方按鈕播放音檔。播放進度與音量可在播放器中調整。</p>
 
     <section class="tracks" aria-label="音檔清單">
@@ -100,28 +101,28 @@
         <button class="play-button" type="button" aria-label="播放 you are my destiny" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5c0-.77.84-1.25 1.5-.86l10.1 6.03a1 1 0 0 1 0 1.72L9.5 18.42A1 1 0 0 1 8 17.56z"/></svg>
         </button>
-        <div><h2 class="track-title">you are my destiny</h2><p class="track-file">1.mov</p></div>
+        <div><h2 class="track-title">you are my destiny</h2><p class="track-file">1.mov</p><p class="track-note">備註：江跟兩隻美人魚分兩邊退場時按下按鈕</p></div>
         <span class="track-number">01</span>
       </article>
       <article class="track" data-track="1">
         <button class="play-button" type="button" aria-label="播放 bang bang bang" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5c0-.77.84-1.25 1.5-.86l10.1 6.03a1 1 0 0 1 0 1.72L9.5 18.42A1 1 0 0 1 8 17.56z"/></svg>
         </button>
-        <div><h2 class="track-title">bang bang bang</h2><p class="track-file">2.mov</p></div>
+        <div><h2 class="track-title">bang bang bang</h2><p class="track-file">2.mov</p><p class="track-note">備註：喆說完「你有看過東大權志龍嗎」按下按鈕</p></div>
         <span class="track-number">02</span>
       </article>
       <article class="track" data-track="2">
         <button class="play-button" type="button" aria-label="播放 water" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5c0-.77.84-1.25 1.5-.86l10.1 6.03a1 1 0 0 1 0 1.72L9.5 18.42A1 1 0 0 1 8 17.56z"/></svg>
         </button>
-        <div><h2 class="track-title">water</h2><p class="track-file">3.mov</p></div>
+        <div><h2 class="track-title">water</h2><p class="track-file">3.mov</p><p class="track-note">備註：喆：「你站好！當我的鋼管」按下按鈕</p></div>
         <span class="track-number">03</span>
       </article>
       <article class="track" data-track="3">
         <button class="play-button" type="button" aria-label="播放蝴蝶蝴蝶真美麗" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5c0-.77.84-1.25 1.5-.86l10.1 6.03a1 1 0 0 1 0 1.72L9.5 18.42A1 1 0 0 1 8 17.56z"/></svg>
         </button>
-        <div><h2 class="track-title">蝴蝶蝴蝶真美麗</h2><p class="track-file">4.mov</p></div>
+        <div><h2 class="track-title">蝴蝶蝴蝶真美麗</h2><p class="track-file">4.mov</p><p class="track-note">備註：江：「老師可以跟我們一起上台跳舞嗎」按下按鈕</p></div>
         <span class="track-number">04</span>
       </article>
     </section>
